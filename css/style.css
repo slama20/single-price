@@ -1,0 +1,86 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(223 226 221 / 65%);
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 420px;
+    margin-left: 25%;
+    margin-top: 80px;
+    box-shadow: 5px 5px 5px 0 #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.one {
+    width: 100%;
+    background-color:hsl(73, 100%, 98%);
+    height: 50%;
+    padding-left:30px;
+    padding-right: 30px;
+}
+.one h3 { color:hsl(179, 62%, 43%); padding-top: 15px;}
+.one h4 { color:hsl(71, 73%, 54%); font-weight: bold;}
+.one p {color: hsl(200, 4%, 70%); line-height: 27px;}
+
+.tow {
+    width: 50%;
+    height: 100%;
+    background-color: hsl(179, 62%, 43%);
+    padding-left:30px;
+    padding-right: 30px;
+    color:hsl(73, 100%, 98%);
+}
+span[title="00"]{
+    font-size: 30px;
+    font-weight: bold;
+    padding-right: 14px;
+}
+span[title="01"]{
+    opacity: 0.5;
+    position: relative;
+    top: -5px;
+}
+.tow button {
+    width: 100%;
+    background-color:hsl(71, 73%, 54%);
+    font-weight: bold;
+    color:hsl(73, 100%, 98%);
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+}
+button:hover { cursor: pointer;}
+
+.three {
+    width: 50%;
+    height: 100%;
+    background-color: hsla(179, 51%, 49%, 0.911);
+    padding-left:30px;
+    padding-right: 30px;
+    color:hsl(73, 100%, 98%); 
+}
+.three p{     line-height: 26px; font-size: 14px;}
+
+@media(max-width:767px){
+
+    .container {
+        height: 100vh;
+        width: 100%;
+        margin: 10px auto;
+    }
+    
+    .one{ width: 100%; height: 34%}
+    .tow{ width: 100%; height: 33%}
+    .three{ width: 100%; height: 33%}
+
+}
